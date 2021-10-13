@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Le Formulaires</h1>
+
+<form action="mailto:damien.olivier.do@gmail.com" method="post">
+
+    <fieldset>
+
+        <div>
+            <label for="text">Texte</label>
+            <textarea id="text" name="text"></textarea>
+        </div>
+
+        <div>
+            <label for="password">MDP</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div>
+            <label for="start">Start date:</label>
+
+            <input type="date" id="start" name="trip-start"
+                   value="2000-03-08"
+                   min="2000-01-01" max="2015-12-31">
+        </div>
+
+        <div>
+            <input type="color" id="head" name="head"
+                   value="#e66465">
+            <label for="head">Choisisez votre couleur</label>
+        </div>
+
+    </fieldset>
+
+
+    <div>
+        <label for="mounth">Jeux-video preferer</label>
+            <select id="mounth" name="mounth">
+
+                <option value="wit">Witcher 3</option>
+
+                <option value="sky">Skyrim</option>
+
+                <option value="mhw">Monster Hunter</option>
+
+                <option value="gta">GTA 5</option>
+
+                <option value="gtas">GTA San Andreas</option>
+
+                <option value="rdr">Red Dead Redemption</option>
+
+                <option value="rdrii">Red Dead Redemption II</option>
+
+                <option value="r6">Rainbow 6</option>
+
+                <option value="td2">The Division 2</option>
+
+                <option value="cyp">Cyberpunk 2077</option>
+
+            </select>
+    </div>
+
+    <fieldset>
+        <div>
+            <input type="reset" value="Rénitialiser">
+        </div>
+
+        <button type="submit" name="submit">Envoyer</button>
+    </fieldset>
+
+
+    <fieldset>
+        <div>
+            <label for="homme">M</label>
+            <input type="radio" name="sexe" id="homme" value="homme">
+
+            <label for="femme">F</label>
+            <input type="radio" name="sexe" id="femme" value="femme">
+
+            <label for="autre">X</label>
+            <input type="radio" name="sexe" id="autre" value="autre">
+        </div>
+    </fieldset>
+
+    <div>
+        <h4>Vous aimez ?</h4>
+
+        <label for="rpg">RPG</label>
+        <input type="checkbox" name="rpg" id="rpg" value="rpg">
+
+        <label for="action">Action</label>
+        <input type="checkbox" name="action" id="action" value="action">
+
+        <label for="fps">FPS</label>
+        <input type="checkbox" name="fps" id="fps" value="fps">
+    </div>
+
+
+</form>
+
+</body>
+</html>
